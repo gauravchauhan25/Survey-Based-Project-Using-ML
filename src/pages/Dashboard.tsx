@@ -161,7 +161,7 @@ const charts = [
 ];
 
 const kpiStats = [
-  { label: 'Total Responses', value: '524', change: '+12% this week', color: 'text-blue-700', bg: 'bg-blue-50' },
+  { label: 'Total Responses', value: '0.7', change: '+12% this week', color: 'text-blue-700', bg: 'bg-blue-50' },
   { label: 'Aware of DPDP Act', value: '22%', change: 'Of all respondents', color: 'text-yellow-600', bg: 'bg-yellow-50' },
   { label: 'Never Read Privacy Policy', value: '51%', change: 'Alarming trend', color: 'text-rose-600', bg: 'bg-rose-50' },
   { label: 'States Covered', value: '18', change: 'Pan-India reach', color: 'text-emerald-600', bg: 'bg-emerald-50' },

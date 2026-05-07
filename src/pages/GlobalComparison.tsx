@@ -187,7 +187,7 @@ export default function GlobalComparison() {
             <span className="section-badge bg-blue-100 text-blue-700">Overview</span>
             <h2 className="text-3xl font-bold text-slate-900">Laws at a Glance</h2>
           </div>
-          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {overviewCards.map((card) => (
               <div key={card.law} className={`glass-card card-hover ${card.color}`}>
                 <div className="text-3xl mb-2">{card.icon}</div>
