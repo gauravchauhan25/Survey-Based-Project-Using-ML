@@ -161,10 +161,10 @@ const charts = [
 ];
 
 const kpiStats = [
-  { label: 'Total Responses', value: '0.7', change: '+12% this week', color: 'text-blue-700', bg: 'bg-blue-50' },
-  { label: 'Aware of DPDP Act', value: '22%', change: 'Of all respondents', color: 'text-yellow-600', bg: 'bg-yellow-50' },
-  { label: 'Never Read Privacy Policy', value: '51%', change: 'Alarming trend', color: 'text-rose-600', bg: 'bg-rose-50' },
-  { label: 'States Covered', value: '18', change: 'Pan-India reach', color: 'text-emerald-600', bg: 'bg-emerald-50' },
+  { label: 'Average Awareness Index', value: '0.78', color: 'text-blue-700', bg: 'bg-blue-50' },
+  { label: 'Average DPDP Awareness', value: '1.20', change: 'average of dpdp_score', color: 'text-yellow-600', bg: 'bg-yellow-50' },
+  { label: 'Average IT Awareness', value: '0.46', change: 'average of it_act_score', color: 'text-rose-600', bg: 'bg-rose-50' },
+  { label: 'Total Responses', value: '152', change: 'Count of course', color: 'text-emerald-600', bg: 'bg-emerald-50' },
 ];
 
 export default function Dashboard() {
@@ -189,31 +189,9 @@ export default function Dashboard() {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-          {charts.map((chart) => (
-            <div key={chart.id} className="glass-card card-hover flex flex-col">
-              <div className="flex items-center gap-3 mb-1">
-                <div className={`w-9 h-9 rounded-xl flex items-center justify-center text-white ${chart.iconBg}`}>
-                  {chart.icon}
-                </div>
-                <div>
-                  <h3 className="font-bold text-slate-900 text-sm">{chart.title}</h3>
-                </div>
-              </div>
-              <p className="text-xs text-slate-400 mb-5">{chart.subtitle}</p>
+        
 
-              {chart.type === 'donut' ? (
-                <DonutChart segments={chart.data as { label: string; value: number; color: string }[]} />
-              ) : (
-                <BarChart
-                  data={chart.data as { label: string; value: number }[]}
-                  colors={(chart as { colors: string[] }).colors}
-                />
-              )}
-            </div>
-          ))}
-        </div>
-
+        
         <div className="mt-8 glass-card text-center py-8">
           <PieChart className="w-10 h-10 text-slate-300 mx-auto mb-3" />
           <h3 className="text-lg font-bold text-slate-800 mb-2">Power BI Embed Placeholder</h3>
