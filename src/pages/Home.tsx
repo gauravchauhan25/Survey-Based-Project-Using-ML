@@ -120,9 +120,8 @@ export default function Home() {
 
             <div className="mt-12 grid grid-cols-3 gap-6 max-w-lg">
               {[
-                { num: "500+", label: "Responses" },
-                { num: "15+", label: "States" },
-                { num: "8", label: "Key Insights" },
+                { num: "150", label: "Responses" },
+                { num: "10+", label: "Key Insights" },
               ].map((s) => (
                 <div key={s.label} className="text-center">
                   <div className="text-2xl font-bold text-yellow-400">
