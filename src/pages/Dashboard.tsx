@@ -255,9 +255,6 @@ export default function Dashboard() {
     <div className="min-h-screen pt-16">
       <div className="bg-gradient-to-r from-slate-900 to-blue-900 py-14 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="section-badge bg-yellow-400 text-slate-900">
-            Live Data
-          </span>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-3">
             Survey Dashboard
           </h1>
@@ -285,64 +282,69 @@ export default function Dashboard() {
           ))}
         </div>
 
-      <div className="min-h-screen py-8 bg-slate-50">
-  
-  {/* Dashboard */}
-  <div className="my-3 grid grid-cols-1 lg:grid-cols-2 gap-5 px-4 place-items-center">
-    <img
-      src="/dashboard2.jpeg"
-      alt="Dashboard 2"
-      className="w-full max-w-3xl rounded-xl shadow-lg"
-    />
+        <div className="min-h-screen py-8 bg-slate-50">
+          {/* Dashboard */}
+          <div className="my-3 gap-5 px-4 place-items-center">
+            <img
+              src="/dashboard2.jpeg"
+              alt="Dashboard 2"
+              className="w-full max-w-4xl rounded-xl my-5 shadow-lg"
+            />
 
-    <img
-      src="/dashboard1.jpeg"
-      alt="Dashboard 1"
-      className="w-full max-w-2xl rounded-xl shadow-lg"
-    />
-  </div>
+            <img
+              src="/dashboard1.jpeg"
+              alt="Dashboard 1"
+              className="w-full max-w-4xl rounded-xl shadow-lg"
+            />
+          </div>
 
-  {/* Graphs */}
-  <div className="my-7 grid grid-cols-1 lg:grid-cols-2 gap-5 px-4 place-items-center">
-    <img
-      src="/graph1.jpeg"
-      alt="Graph 1"
-      className="w-full max-w-3xl rounded-xl shadow-lg"
-    />
+          {/* Graphs */}
+          <div className="my-7 grid grid-cols-1 lg:grid-cols-2 gap-5 px-4 place-items-center">
+            <img
+              src="/graph1.jpeg"
+              alt="Graph 1"
+              className="w-full max-w-3xl rounded-xl shadow-lg"
+            />
 
-    <img
-      src="/graph2.jpeg"
-      alt="Graph 2"
-      className="w-full max-w-2xl rounded-xl shadow-lg"
-    />
-  </div>
+            <img
+              src="/graph2.jpeg"
+              alt="Graph 2"
+              className="w-full max-w-2xl rounded-xl shadow-lg"
+            />
+          </div>
 
-  {/* Details */}
-  <div className="my-7 flex justify-center px-4">
-    <img
-      src="/details.jpeg"
-      alt="Details"
-      className="w-full max-w-2xl rounded-xl shadow-lg"
-    />
-  </div>
+          <div className="bg-gradient-to-r from-slate-900 to-blue-900 py-14 px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl font-extrabold text-white">
+                Word Cloud
+              </h1>
+            </div>
+          </div>
 
-  {/* Data Privacy */}
-  <div className="my-7 grid grid-cols-1 lg:grid-cols-2 gap-5 px-4 place-items-center">
-    <img
-      src="/data-privacy.jpeg"
-      alt="Data Privacy"
-      className="w-full max-w-3xl rounded-xl shadow-lg"
-    />
+          {/* Details */}
+          <div className="my-7 flex justify-center px-4">
+            <img
+              src="/details.jpeg"
+              alt="Details"
+              className="w-full max-w-2xl rounded-xl shadow-lg"
+            />
+          </div>
 
-    <img
-      src="/data.jpeg"
-      alt="Data"
-      className="w-full max-w-lg rounded-xl shadow-lg"
-    />
-  </div>
+          {/* Word cloud */}
+          <div className="my-7 grid grid-cols-1 lg:grid-cols-2 gap-5 px-4 place-items-center">
+            <img
+              src="/data-privacy.jpeg"
+              alt="Data Privacy"
+              className="w-full max-w-3xl rounded-xl shadow-lg"
+            />
 
-  <div className="max-w-2xl mx-auto px-4 py-10"></div>
-</div>
+            <img
+              src="/data.jpeg"
+              alt="Data"
+              className="w-full max-w-lg rounded-xl shadow-lg"
+            />
+          </div>
+        </div>
 
         <div className="mt-8 glass-card text-center py-8">
           <PieChart className="w-10 h-10 text-slate-300 mx-auto mb-3" />
@@ -356,7 +358,7 @@ export default function Dashboard() {
           </p>
           <div className="mt-5 bg-slate-50 rounded-xl p-4 max-w-lg mx-auto">
             <code className="text-xs text-slate-500 font-mono">
-              {`<iframe src="https://app.powerbi.com/view?r=YOUR_EMBED_TOKEN" ... />`}
+             Link
             </code>
           </div>
         </div>

@@ -36,10 +36,7 @@ export default function Footer() {
             <p className="text-sm text-slate-400 leading-relaxed mb-4">
               A research project exploring awareness of data privacy laws among college students across India, focusing on the IT Act 2000 and DPDP Act 2023.
             </p>
-            <div className="flex items-center gap-2 text-sm text-slate-400">
-              <Mail className="w-4 h-4 text-yellow-400 shrink-0" />
-              <span>dataprivacy.india@research.in</span>
-            </div>
+            
           </div>
 
           <div>

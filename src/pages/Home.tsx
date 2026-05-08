@@ -204,38 +204,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="section-badge bg-yellow-100 text-yellow-700">
-              Did You Know?
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-              Surprising Facts About Data Privacy in India
-            </h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {didYouKnowFacts.map((fact) => (
-              <div
-                key={fact.stat}
-                className={`rounded-2xl border p-6 card-hover ${fact.color}`}
-              >
-                <div
-                  className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${fact.iconBg}`}
-                >
-                  {fact.icon}
-                </div>
-                <div className="text-4xl font-extrabold mb-2">{fact.stat}</div>
-                <p className="text-sm leading-relaxed opacity-80">
-                  {fact.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
