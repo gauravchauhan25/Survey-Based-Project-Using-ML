@@ -285,61 +285,64 @@ export default function Dashboard() {
           ))}
         </div>
 
-        <div className="min-h-screen py-8 bg-slate-50 ">
-          \{/* Dashboard */}
-          <div className="my-3 flex items-center justify-center gap-5">
-            <img
-              src="/dashboard2.jpeg"
-              alt="Poster"
-              className="w-full max-w-3xl rounded-xl shadow-lg"
-            />
-            <img
-              src="/dashboard1.jpeg"
-              alt="Poster"
-              className="w-full max-w-2xl rounded-xl shadow-lg"
-            />
-          </div>
+      <div className="min-h-screen py-8 bg-slate-50">
+  
+  {/* Dashboard */}
+  <div className="my-3 grid grid-cols-1 lg:grid-cols-2 gap-5 px-4 place-items-center">
+    <img
+      src="/dashboard2.jpeg"
+      alt="Dashboard 2"
+      className="w-full max-w-3xl rounded-xl shadow-lg"
+    />
 
+    <img
+      src="/dashboard1.jpeg"
+      alt="Dashboard 1"
+      className="w-full max-w-2xl rounded-xl shadow-lg"
+    />
+  </div>
 
-          {/* Graphs */}
-          <div className="my-7 flex items-center justify-center px-4 gap-5">
-            <img
-              src="/graph1.jpeg"
-              alt="Poster"
-              className="w-full max-w-3xl rounded-xl shadow-lg"
-            />
-            <img
-              src="/graph2.jpeg"
-              alt="Poster"
-              className="w-full max-w-2xl rounded-xl shadow-lg"
-            />
-          </div>
+  {/* Graphs */}
+  <div className="my-7 grid grid-cols-1 lg:grid-cols-2 gap-5 px-4 place-items-center">
+    <img
+      src="/graph1.jpeg"
+      alt="Graph 1"
+      className="w-full max-w-3xl rounded-xl shadow-lg"
+    />
 
+    <img
+      src="/graph2.jpeg"
+      alt="Graph 2"
+      className="w-full max-w-2xl rounded-xl shadow-lg"
+    />
+  </div>
 
-          <div className="my-7 flex items-center justify-center px-4 gap-5">
-            <img
-              src="/details.jpeg"
-              alt="Poster"
-              className="w-full max-w-2xl rounded-xl shadow-lg"
-            />
-          </div>
+  {/* Details */}
+  <div className="my-7 flex justify-center px-4">
+    <img
+      src="/details.jpeg"
+      alt="Details"
+      className="w-full max-w-2xl rounded-xl shadow-lg"
+    />
+  </div>
 
+  {/* Data Privacy */}
+  <div className="my-7 grid grid-cols-1 lg:grid-cols-2 gap-5 px-4 place-items-center">
+    <img
+      src="/data-privacy.jpeg"
+      alt="Data Privacy"
+      className="w-full max-w-3xl rounded-xl shadow-lg"
+    />
 
-          <div className="my-7 flex items-center justify-center px-4 gap-5">
-            <img
-              src="/data-privacy.jpeg"
-              alt="Poster"
-              className="w-full max-w-3xl rounded-xl shadow-lg"
-            />
+    <img
+      src="/data.jpeg"
+      alt="Data"
+      className="w-full max-w-lg rounded-xl shadow-lg"
+    />
+  </div>
 
-            <img
-              src="/data.jpeg"
-              alt="Poster"
-              className="w-full max-w-lg rounded-xl shadow-lg"
-            />
-          </div>
-          <div className="max-w-2xl mx-auto px-4 py-10"></div>
-        </div>
+  <div className="max-w-2xl mx-auto px-4 py-10"></div>
+</div>
 
         <div className="mt-8 glass-card text-center py-8">
           <PieChart className="w-10 h-10 text-slate-300 mx-auto mb-3" />
